@@ -9,11 +9,7 @@ const app = express()
 app.use(bodyParser.json())
 app.use(routes)
 
-
 const port = 3000
-
-app.get('/', (req, res) => res.send('Hello World!'))
-
 connection.sync()
   .then(() => {
     console.log('Database connected & synced ');
