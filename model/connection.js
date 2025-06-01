@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
 
 
-const connection = new Sequelize("parking","postgres","rivaldo12",{
+const connection = new Sequelize("db_name","username","password",{
     host: "localhost",
     dialect: "postgres",
 })
